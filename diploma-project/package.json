@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://diplooma-server.vercel.app/",
+  "baseUrl": "https://diplooma-client.vercel.app/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
