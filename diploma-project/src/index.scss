@@ -1,0 +1,89 @@
+@use "modern-normalize";
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("./fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("./fonts/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url("./fonts/Poppins-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  overflow-y: scroll;
+  padding-top: 75px;
+}
+
+p img {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #c4c4c4;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+h5 {
+  margin: 0;
+}
+
+pre {
+  margin: 0;
+}
+
+main {
+  background-color: #eeeaea;
+}
+
+.logo {
+  margin-left: 75px;
+}
+
+.nav-title:hover {
+  cursor: pointer;
+}
+
+aside::-webkit-scrollbar {
+  width: 6px;
+}
+
+aside::-webkit-scrollbar-track {
+  background-color: #38444d;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background-color: #777;
+}
+
+em {
+  margin-top: 8px;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .main-media {
+    margin-left: 0 !important;
+  }
+}
