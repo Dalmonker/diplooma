@@ -14,7 +14,7 @@ const links = [
       {
         title: "2. Простые селекторы, вложенность и вес селектора",
         id: uuid.v4(),
-        link: "/add-styles",
+        link: "/selectors",
       },
       {
         title: "3. Единицы измерения CSS, свойство display",
