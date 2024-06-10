@@ -12,6 +12,9 @@ const Main = () => {
   const { lesson } = useParams();
 
   useEffect(() => {
+    if (lesson === "") {
+      lesson = "chto-takoe-css";
+    }
     setLoading(true);
     request("https://diplooma-server.vercel.app/api/lessons/" + lesson)
       .then((res) => {
