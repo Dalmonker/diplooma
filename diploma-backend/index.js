@@ -11,11 +11,11 @@ app.use("/api", mainRoute);
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static(path.join(__dirname, "../diploma-project/dist")));
+app.use(express.static(path.join(__dirname, "./dist")));
 
 // Обработка всех остальных маршрутов и отправка index.html
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../diploma-project/dist", "index.html"));
+  res.sendFile(path.join(__dirname, "./dist", "index.html"));
 });
 
 app.listen(port, () => {
