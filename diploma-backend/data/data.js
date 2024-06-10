@@ -456,7 +456,7 @@ Static является значением по умолчанию для все
 \`\`\`
 *Пример 2.1. Использования свойства position со значением static*
 
-![Logo](https://diplooma-server.vercel.app/images/picture2.1.png "I am as caption")
+![Logo](https://drive.google.com/file/d/1JpLAPWnU3YAFsETpobD6d0HIkL8IF2Mu/view?usp=sharing)
 *Рис. 2.1. Position: static*
 
 **Relative**
