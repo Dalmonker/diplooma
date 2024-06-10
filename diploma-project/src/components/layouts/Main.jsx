@@ -13,7 +13,7 @@ const Main = () => {
 
   useEffect(() => {
     setLoading(true);
-    request("/api/lessons/" + lesson)
+    request("https://diplooma-server.vercel.app/api/lessons/" + lesson)
       .then((res) => {
         setContent(res);
       })

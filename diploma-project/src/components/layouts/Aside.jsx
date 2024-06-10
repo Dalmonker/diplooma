@@ -25,7 +25,7 @@ const Aside = () => {
 
   useEffect(() => {
     setLoading(true);
-    request("/api/navigation")
+    request("https://diplooma-server.vercel.app/api/navigation")
       .then((res) => {
         setLinks(res);
       })
