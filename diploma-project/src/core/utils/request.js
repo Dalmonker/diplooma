@@ -1,6 +1,7 @@
 export const request = async (url = "") => {
+  const baseUrl = "https://diplooma-server.vercel.app";
   try {
-    const result = await fetch(url);
+    const result = await fetch(`${baseUrl}${url}`);
 
     return result.json();
   } catch (e) {
