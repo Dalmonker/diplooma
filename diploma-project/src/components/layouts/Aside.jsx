@@ -25,7 +25,7 @@ const Aside = () => {
 
   useEffect(() => {
     setLoading(true);
-    request("http://localhost:3000/api/navigation")
+    request("/api/navigation")
       .then((res) => {
         setLinks(res);
       })

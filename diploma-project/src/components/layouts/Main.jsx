@@ -13,7 +13,7 @@ const Main = () => {
 
   useEffect(() => {
     setLoading(true);
-    request("http://localhost:3000/api/lessons/" + lesson)
+    request("/api/lessons/" + lesson)
       .then((res) => {
         setContent(res);
       })
