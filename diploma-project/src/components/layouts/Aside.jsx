@@ -6,7 +6,6 @@ import AsideDropdown from "../items/Dropdown";
 
 const asideStyle = {
   position: "relative",
-  height: "100%",
   bgcolor: "#38444d",
   fontSize: "32px",
   maxHeight: "100%",
