@@ -29,7 +29,7 @@ const Main = () => {
     console.log(slug);
     const baseUrl = "https://diplooma-server.vercel.app";
     setLoading(true);
-    request("http://localhost/api/lessons/" + slug)
+    request("https://diplooma-server.vercel.app/api/lessons/" + slug)
       .then((res) => {
         setContent(res);
         console.log(res);
