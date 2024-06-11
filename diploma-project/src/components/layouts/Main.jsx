@@ -12,11 +12,10 @@ const Main = () => {
   const { lesson } = useParams();
 
   useEffect(() => {
-    if (lesson === "") {
-      lesson = "chto-takoe-css";
-    }
+    const slug = lesson === "" ? "chto-takoe-css" : lesson;
+    console.log(slug);
     setLoading(true);
-    request("https://diplooma-server.vercel.app/api/lessons/" + lesson)
+    request("https://diplooma-server.vercel.app/api/lessons/" + slug)
       .then((res) => {
         setContent(res);
       })
