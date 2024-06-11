@@ -11,18 +11,18 @@ const Main = () => {
   const [isLoading, setLoading] = useState(true);
   const { lesson } = useParams();
 
-  useEffect(() => {
-    const slug = lesson ? lesson : "chto-takoe-css";
-    console.log(slug);
-    setLoading(true);
-    request("https://diplooma-server.vercel.app/api/lessons/" + slug)
-      .then((res) => {
-        setContent(res);
-        console.log(res);
-      })
-      .catch(console.error)
-      .finally(() => setLoading(false));
-  }, []);
+  // useEffect(() => {
+  //   const slug = lesson ? lesson : "chto-takoe-css";
+  //   console.log(slug);
+  //   setLoading(true);
+  //   request("https://diplooma-server.vercel.app/api/lessons/" + slug)
+  //     .then((res) => {
+  //       setContent(res);
+  //       console.log(res);
+  //     })
+  //     .catch(console.error)
+  //     .finally(() => setLoading(false));
+  // }, []);
 
   useEffect(() => {
     const slug = lesson ? lesson : "chto-takoe-css";
