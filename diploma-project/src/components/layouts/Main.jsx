@@ -24,19 +24,19 @@ const Main = () => {
       .finally(() => setLoading(false));
   }, []);
 
-  // useEffect(() => {
-  //   const slug = lesson ? lesson : "chto-takoe-css";
-  //   console.log(slug);
-  //   const baseUrl = "https://diplooma-server.vercel.app";
-  //   setLoading(true);
-  //   request("http://localhost/api/lessons/" + slug)
-  //     .then((res) => {
-  //       setContent(res);
-  //       console.log(res);
-  //     })
-  //     .catch(console.error)
-  //     .finally(() => setLoading(false));
-  // }, [lesson]);
+  useEffect(() => {
+    const slug = lesson ? lesson : "chto-takoe-css";
+    console.log(slug);
+    const baseUrl = "https://diplooma-server.vercel.app";
+    setLoading(true);
+    request("http://localhost/api/lessons/" + slug)
+      .then((res) => {
+        setContent(res);
+        console.log(res);
+      })
+      .catch(console.error)
+      .finally(() => setLoading(false));
+  }, [lesson]);
 
   if (isLoading)
     return (
