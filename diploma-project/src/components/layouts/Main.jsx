@@ -5,6 +5,7 @@ import Practic from "../blocks/Practic";
 import { useEffect, useState } from "react";
 import { request } from "../../core/utils/request";
 import { useParams } from "react-router-dom";
+import { baseUrl } from "../../env";
 
 const Main = () => {
   const [content, setContent] = useState([]);
@@ -26,10 +27,9 @@ const Main = () => {
 
   useEffect(() => {
     const slug = lesson ? lesson : "chto-takoe-css";
-    console.log(slug);
-    const baseUrl = "https://diplooma-server.vercel.app";
+
     setLoading(true);
-    request("https://diplooma-server.vercel.app/api/lessons/" + slug)
+    request(baseUrl + "/api/lessons/" + slug)
       .then((res) => {
         setContent(res);
         console.log(res);

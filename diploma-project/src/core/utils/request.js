@@ -1,5 +1,7 @@
 export const request = async (url = "") => {
-  // const baseUrl = "https://diplooma-server.vercel.app";
+  //  const baseUrl = "https://diplooma-server.vercel.app/";
+  // const baseUrl = "http://localhost:3000/";
+
   try {
     const result = await fetch(url);
 

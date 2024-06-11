@@ -3,6 +3,7 @@ import { styled } from "@mui/material/styles";
 import { request } from "../../core/utils/request";
 import { Box, Skeleton } from "@mui/material";
 import AsideDropdown from "../items/Dropdown";
+import { baseUrl } from "../../env";
 
 const asideStyle = {
   position: "relative",
@@ -24,9 +25,8 @@ const Aside = () => {
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
-    const baseUrl = "https://diplooma-server.vercel.app";
     setLoading(true);
-    request("https://diplooma-server.vercel.app/api/navigation")
+    request(baseUrl + "/api/navigation")
       .then((res) => {
         setLinks(res);
       })
