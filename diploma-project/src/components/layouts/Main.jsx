@@ -21,6 +21,18 @@ const Main = () => {
       })
       .catch(console.error)
       .finally(() => setLoading(false));
+  }, []);
+
+  useEffect(() => {
+    const slug = lesson === "" ? "chto-takoe-css" : lesson;
+    console.log(slug);
+    setLoading(true);
+    request("https://diplooma-server.vercel.app/api/lessons/" + slug)
+      .then((res) => {
+        setContent(res);
+      })
+      .catch(console.error)
+      .finally(() => setLoading(false));
   }, [lesson]);
 
   if (isLoading)
