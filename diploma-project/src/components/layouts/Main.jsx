@@ -18,6 +18,7 @@ const Main = () => {
     request("https://diplooma-server.vercel.app/api/lessons/" + slug)
       .then((res) => {
         setContent(res);
+        console.log(res);
       })
       .catch(console.error)
       .finally(() => setLoading(false));
@@ -30,6 +31,7 @@ const Main = () => {
     request("https://diplooma-server.vercel.app/api/lessons/" + slug)
       .then((res) => {
         setContent(res);
+        console.log(res);
       })
       .catch(console.error)
       .finally(() => setLoading(false));
