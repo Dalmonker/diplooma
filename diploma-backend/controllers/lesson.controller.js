@@ -8,9 +8,12 @@ class LessonController {
       "origin, content-type, accept"
     );
 
+    console.log(req.params.lesson);
+
     const lesson = data.lessons.find(
       (lesson) => lesson.slug === req.params.lesson
     );
+
     setTimeout(() => {
       if (lesson) {
         res.json(lesson.blocks);

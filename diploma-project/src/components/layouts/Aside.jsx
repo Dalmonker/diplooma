@@ -24,6 +24,7 @@ const Aside = () => {
   const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
+    const baseUrl = "https://diplooma-server.vercel.app";
     setLoading(true);
     request("https://diplooma-server.vercel.app/api/navigation")
       .then((res) => {
