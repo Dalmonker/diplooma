@@ -1989,7 +1989,7 @@ body {
 * Добавите отступы и закрепите тему блочной модели.
 За шесть шагов вы стилизуете страницу **index.html**, макет которой представлен на изображении ниже:
 
-![Logo](https://diplooma-server.vercel.app/images/task-test.png "I am as caption")
+![Logo](https://i.imgur.com/elgZF9z.png "I am as caption")
 *Рис. 1.1 Итоговый результат*
 
 1. Создание папки проекта и подключение стилей
@@ -2010,7 +2010,7 @@ body {
 
 Подключите созданные файлы **normalize.css** и **style.css** в файле **index.html** внутри тега **<head>**, как показано на изображении ниже: 
 
-![Logo](https://diplooma-server.vercel.app/images/task-tesk2.png "I am as caption")
+![Logo](https://i.imgur.com/LTNzJsn.png "I am as caption")
 *Рис. 1.2 Подключение стилей*
 
 Важно:
@@ -2018,7 +2018,7 @@ body {
 * Вся дальнейшая стилизация будет выполняться в файле **style.css**.
 Убедитесь, что структура проекта на этом этапе выглядит так:
 
-![Logo](https://diplooma-server.vercel.app/images/task-tesk3.png "I am as caption")
+![Logo](https://i.imgur.com/T6BkVlj.png "I am as caption")
 *Рис. 1.3 Структура проекта*
 После того как вы подготовили папку для проекта и подключили стили, переходите к стилизации страницы.
 
