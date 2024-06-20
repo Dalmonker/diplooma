@@ -71,7 +71,7 @@ const links = [
       {
         title: "7. Размеры элементов",
         id: uuid.v4(),
-        link: "/validity",
+        link: "/width",
       },
       {
         title: "8. Списки и ссылки",
