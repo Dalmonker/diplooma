@@ -2063,18 +2063,22 @@ body {
 Для этого укажите ссылку class=”logo” и стилизуйте её в файле style.css. По умолчанию ссылка — строчный элемент. Чтобы отступы у таких элементов работали корректно, необходимо сделать их строчно-блочными.
 
 \`\`\`
-.logo {
-  display: inline-block;
-  margin-bottom: 50px;
-}
+<style>
+  .logo {
+    display: inline-block;
+    margin-bottom: 50px;
+  }
+</style>
 \`\`\`
 
 Шаг 4. Для div со ссылками Indents и Modules укажите нижний отступ — 50px. Для этого добавьте для него класс class=”links” и стилизуйте его в файле style.css.
 
 \`\`\`
-.links {
-  margin-bottom: 50px;
-}
+  <style>
+  .links {
+    margin-bottom: 50px;
+  }
+  </style>
 \`\`\`
 
 Шаг 5. Сделайте ссылки Indents и Modules строчно-блочными. 
@@ -2090,18 +2094,22 @@ body {
 Выполните CSS-стилизацию.
 
 \`\`\`
-.link {
-  display: inline-block;
-  padding: 24px 49px;
-}
+<style>
+  .link {
+    display: inline-block;
+    padding: 24px 49px;
+  }
+</style>
 \`\`\`
 
 Шаг 6. Добавьте отступ между ссылками Indents и Modules. Для этого задайте всем ссылкам с классом link (кроме последней) правый отступ — 25px.
 
 \`\`\`
-.link:not(:last-child) {
-  margin-right: 25px;
-}
+<style>
+  .link:not(:last-child) {
+    margin-right: 25px;
+  }
+</style>
 \`\`\`
 
 :not(:last-child) — селектор выбора элементов из набора. Помогает стилизовать все элементы указанного класса за исключением последнего.
